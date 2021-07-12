@@ -30,6 +30,8 @@ class NewStudentContainer extends Component {
         let student = {
             firstname: this.state.firstname,
             lastname: this.state.lastname,
+            email: this.state.email,
+            gpa: this.state.gpa,
             campusId: this.state.campusId
         };
         

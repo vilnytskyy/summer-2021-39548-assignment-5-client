@@ -78,6 +78,11 @@ td {
     padding: 0;
 }
 
+form {
+    text-align: center;
+    /* padding-right: 150px; */
+}
+
 label {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 24px;

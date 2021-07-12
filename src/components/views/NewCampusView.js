@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
 
 }));
 
-const NewStudentView = (props) => {
+const NewCampusView = (props) => {
     const { handleChange, handleSubmit } = props;
     const classes = useStyles();
 
@@ -44,28 +44,18 @@ const NewStudentView = (props) => {
                     </Typography>
                 </div>
                 <form onSubmit={(e) => handleSubmit(e)}>
-                    <label >First Name: </label>
-                    <input type="text" name="firstname" onChange={(e) => handleChange(e)} />
+                    <label >Name: </label>
+                    <input type="text" name="name" onChange={(e) => handleChange(e)} />
                     <br />
                     <br />
 
-                    <label >Last Name: </label>
-                    <input type="text" name="lastname" onChange={(e) => handleChange(e)} />
+                    <label >Address: </label>
+                    <input type="text" name="address" onChange={(e) => handleChange(e)} />
                     <br />
                     <br />
 
-                    <label >email: </label>
-                    <input type="text" name="email" onChange={(e) => handleChange(e)} />
-                    <br />
-                    <br />
-
-                    <label >GPA: </label>
-                    <input type="text" name="gpa" onChange={(e) => handleChange(e)} />
-                    <br />
-                    <br />
-
-                    <label >Campus: </label>
-                    <input type="text" name="campusId" onChange={(e) => handleChange(e)} />
+                    <label >Description: </label>
+                    <input type="text" name="description" onChange={(e) => handleChange(e)} />
                     <br />
                     <br />
 
@@ -81,4 +71,4 @@ const NewStudentView = (props) => {
     )
 }
 
-export default NewStudentView;
+export default NewCampusView;
