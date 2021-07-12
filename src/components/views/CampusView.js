@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import campusImg from "../../imgs/campus.png";
 
 const CampusView = (props) => {
@@ -19,13 +20,17 @@ const CampusView = (props) => {
 
         return temp =
             <ul>
-                {campus.students.map(student => {
-                    let name = student.firstname + " " + student.lastname;
-                    return (
-                        <li key={student.id}>{name}</li>
-                    );
-                })}
-            </ul>
+            {campus.students.map(student => {
+                let name = student.firstname + " " + student.lastname;
+                return (
+                    <div key={student.id}>
+                        <Link className="linkTitle" to={`/student/${student.id}`}>
+                            {name}
+                        </Link>
+                    </div>
+                );
+            })}
+        </ul>
     }
 
     return (
