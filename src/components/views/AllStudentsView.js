@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 const AllStudentsView = (props) => {
-    const { students, deleteStudent } = props;
+    const { allStudents, deleteStudent } = props;
 
-    if (!students.length) {
+    if (!allStudents.length) {
         return (
             <div>
                 <p>There are no students.</p>
-                <Link className="link" to={`student/new`}>
+                <Link className="link" to={`student/newstudent`}>
                     <button>Add New Student</button>
                 </Link>
             </div>
@@ -19,7 +19,7 @@ const AllStudentsView = (props) => {
             <h1 id="CRUD">
                 CRUD App
             </h1>
-            
+
             <h1>
                 All Students
             </h1>
@@ -34,7 +34,7 @@ const AllStudentsView = (props) => {
                 </Link>
             </nav>
 
-            {students.map((student) => {
+            {allStudents.map((student) => {
                 let name = student.firstname + " " + student.lastname;
                 return (
                     <div key={student.id}>
