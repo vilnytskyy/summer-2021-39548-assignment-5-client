@@ -8,7 +8,6 @@
 
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from "react-router-dom";
 
 import { 
   fetchAllStudentsThunk,
@@ -48,4 +47,4 @@ const mapDispatch = (dispatch) => {
   };
 };
 
-export default withRouter(connect(mapState, mapDispatch)(AllStudentsContainer));
+export default connect(mapState, mapDispatch)(AllStudentsContainer);
