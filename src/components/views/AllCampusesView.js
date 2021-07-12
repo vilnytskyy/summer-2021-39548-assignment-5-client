@@ -6,7 +6,17 @@ const AllCampusesView = (props) => {
     const { allCampuses, deleteCampus } = props;
 
     if (!props.allCampuses.length) {
-        return <div>There are no campuses.</div>;
+        return (
+            <div>
+                <p>
+                    There are no campuses.
+                </p>
+                <Link className="link" to={`/newcampus`}>
+                    Add New Campus
+                </Link>
+            </div>
+        );
+
     }
 
     return (
