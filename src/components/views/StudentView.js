@@ -1,14 +1,19 @@
+import { Link } from "react-router-dom";
 import studentImg from "../../imgs/student.png";
 
 const StudentView = (props) => {
     const { student } = props;
 
     const checkCampus = () => {
+        let temp = student.firstname + " " + student.lastname + " is currentlty not attending any campus.";
         if (student.campus === undefined || student.campus === null) {
-            return student.firstname + " " + student.lastname + " is currentlty not attending any campus.";
+            return temp;
         }
 
-        return student.campus.name;
+        return temp =
+        <Link className="linkTitle" to={`/campus/${student.campusId}`}>
+            {student.campus.name}
+        </Link>
     }
 
     return (
