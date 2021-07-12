@@ -16,6 +16,7 @@ const StudentView = (props) => {
         </Link>
     }
 
+    // Forgot to switch branches
     return (
         <div>
             <div>
