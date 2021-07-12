@@ -40,6 +40,10 @@ const AllCampusesView = (props) => {
                     <p>{campus.description}</p>
                 </div>
             ))}
+
+            <Link className="link" to={`/newcampus`}>
+                Add New Campus
+            </Link>
         </div>
     );
 };
