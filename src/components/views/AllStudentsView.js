@@ -7,8 +7,8 @@ const AllStudentsView = (props) => {
         return (
             <div>
                 <p>There are no students.</p>
-                <Link className="link" to={`student/newstudent`}>
-                    <button>Add New Student</button>
+                <Link className="link" to={`/newstudent`}>
+                    Add New Student
                 </Link>
             </div>
         );
