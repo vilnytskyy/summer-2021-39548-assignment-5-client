@@ -8,13 +8,35 @@ const AllCampusesView = (props) => {
     }
 
     return (
-        <div>
+        <div className="AllCampusesView">
+            <h1 id="CRUD">
+                CRUD App
+            </h1>
+            
+            <h1>
+               All Campuses
+            </h1>
+
+            <nav>
+                <Link className="link" to={'/'} >
+                    Home
+                </Link>
+
+                <Link className="link" to={'/students'} >
+                    All Students
+                </Link>
+            </nav>
+
             {props.allCampuses.map((campus) => (
                 <div key={campus.id}>
-                    <img src={campusImg} alt="Campus by Massupa  Kaewgahya from the Noun Project" style={{ height: "100px", width: "auto" }} />
-                    <Link to={`/campus/${campus.id}`}>
-                        <h1>{campus.name}</h1>
+                    <div>
+                        <img src={campusImg} alt="Campus by Massupa  Kaewgahya from the Noun Project" />
+                    </div>
+
+                    <Link className="linkTitle" to={`/campus/${campus.id}`}>
+                        {campus.name}
                     </Link>
+                    
                     <p>{campus.description}</p>
                 </div>
             ))}
