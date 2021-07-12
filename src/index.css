@@ -1,13 +1,98 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #A799B7;    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h1#CRUD {
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    color: #FDF5BF;
+}
+
+nav {
+    padding: 0px 10px 20px;
+}
+
+div {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.link, input[type=submit], button, .linkTitle {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #FDF5BF;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #413C58;
+    padding: 5px 10px;
+    margin: 5px;
+    border-style: solid;
+    font-weight: 600;
+}
+
+.link:hover, input[type=submit]:hover, button:hover {
+    background-color: #21822D;
+}
+
+.linkTitle {
+    color: #222222;
+    font-size: 32px;
+    background-color: #61DAFB;
+    border:  3px solid #222222;
+}
+
+.linkTitle:hover {
+    background-color: #FB8261;
+}
+
+button {
+    font-size: 18px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#info td {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 24px;
+    background-color: #A9B799;
+}
+
+td {
+    border: 3px solid #222222;
+    padding: 5px 10px;
+    background-color: #A799B7;
+}
+
+.addDataTable td {
+    border: none;
+    background-color: #F4AFAB;
+    padding: 0;
+}
+
+label {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 24px;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #A9B799;
+    margin: 10px;
+    color: #222222;
+    border: 3px solid #222222;
+}
+
+img {
+    height: 50px;
+    width: auto;
 }
