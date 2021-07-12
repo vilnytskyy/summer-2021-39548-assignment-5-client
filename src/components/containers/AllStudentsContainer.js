@@ -1,11 +1,3 @@
-// const AllStudentsContainer = () => {
-//   return (
-//     <h1>All Students View</h1>
-//   );
-// };
-
-// export default AllStudentsContainer;
-
 import { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -23,7 +15,7 @@ class AllStudentsContainer extends Component {
     render() {
         return (
             <AllStudentsView
-                students={this.props.allStudents}
+                allStudents={this.props.allStudents}
                 deleteStudent={this.props.deleteStudent}
             />
         )

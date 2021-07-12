@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import campusImg from "../../imgs/campus.png";
 
 const AllCampusesView = (props) => {
+    const { allCampuses, deleteCampus } = props;
+
     if (!props.allCampuses.length) {
         return <div>There are no campuses.</div>;
     }
@@ -27,7 +29,7 @@ const AllCampusesView = (props) => {
                 </Link>
             </nav>
 
-            {props.allCampuses.map((campus) => (
+            {allCampuses.map((campus) => (
                 <div key={campus.id}>
                     <div>
                         <img src={campusImg} alt="Campus by Massupa  Kaewgahya from the Noun Project" />
@@ -38,6 +40,8 @@ const AllCampusesView = (props) => {
                     </Link>
                     
                     <p>{campus.description}</p>
+
+                    <button onClick={() => deleteCampus(campus.id)}>Delete</button>
                 </div>
             ))}
 

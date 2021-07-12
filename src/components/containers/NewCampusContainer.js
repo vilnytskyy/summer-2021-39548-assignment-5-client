@@ -13,6 +13,7 @@ class NewCampusContainer extends Component {
             name: "",
             address: "",
             description: "",
+            students: [],
             redirect: false,
             redirectId: null
         };
@@ -39,6 +40,7 @@ class NewCampusContainer extends Component {
             name: "",
             address: "",
             description: "",
+            students: [],
             redirect: true,
             redirectId: newCampus.id
         });
