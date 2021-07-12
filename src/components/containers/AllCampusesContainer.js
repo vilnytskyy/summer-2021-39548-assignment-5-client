@@ -14,6 +14,7 @@ class AllCampusesContainer extends Component {
     return (
       <AllCampusesView
         allCampuses={this.props.allCampuses}
+        deleteCampus={this.props.deleteCampus}
       />
     );
   }
